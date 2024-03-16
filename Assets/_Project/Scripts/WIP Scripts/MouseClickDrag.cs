@@ -59,7 +59,7 @@ public class MouseClickDrag : MonoBehaviour
     {
       Vector2 tempPosition = new Vector2(draggableObject.transform.position.x, draggableObject.transform.position.y);
       Vector2 closest = origionalPosition;
-      float closestDistance = 100f;
+      float closestDistance = 10000000000f;
       float tempDistance;
       for(int a = 0; a < RoomSpots.roomSpots.GetLength(0); a++)
       {

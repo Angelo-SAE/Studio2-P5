@@ -26,5 +26,8 @@ public class RoomSpots : MonoBehaviour
       roomSpots[1,0] = startingRooms[1];
       roomSpots[0,1] = startingRooms[2];
       roomSpots[1,1] = startingRooms[3];
+      roomSpots[2,1] = startingRooms[4];
+      roomSpots[1,2] = startingRooms[5];
+      roomSpots[2,2] = startingRooms[6];
     }
 }

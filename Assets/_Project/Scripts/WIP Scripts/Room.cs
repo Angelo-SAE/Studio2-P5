@@ -5,9 +5,8 @@ using UnityEngine;
 public class Room : MonoBehaviour
 {
 
-  [SerializeField] private GameObject parentObject;
-
-
+    [SerializeField] private GameObject parentObject;
+    public bool northD,southD,eastD,westD;
 
     void Update()
     {
@@ -19,6 +18,6 @@ public class Room : MonoBehaviour
 
     private void CheckAndUpdatePosition()
     {
-        transform.position = new Vector3(parentObject.transform.position.x, 0f,parentObject.transform.position.y);
+        transform.position = new Vector3(parentObject.transform.position.x * 18f, 0f,parentObject.transform.position.y * 18f);
     }
 }
