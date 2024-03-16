@@ -18,9 +18,9 @@ public class Interactable : MonoBehaviour
         {
             Debug.Log("Interactable layert detecetd");
         }
-        if(interactableHit is not null)
+        if(interactableHit.transform is not null)
         {
-          interactableObject = interactableHit.transform.GameObject;
+          interactableObject = interactableHit.transform.gameObject;
         } else {
           interactableObject = null;
         }
