@@ -8,17 +8,18 @@ public class DoorOpen : MonoBehaviour
     public int keyNumber;
     public bool needsKey;
     public bool canOpen;
-    private bool closedDoors;
+    private bool closedDoor;
+    [SerializeField] private Animator animator;
 
     void Update()
     {
-      if(Mode.mode3D && !closedDoors)
+      if(Mode.mode3D && !closedDoor)
       {
-        closedDoors = true;
-        CloseOpenDoors();
-      } else if(!Mode.mode3D && closedDoors)
+        closedDoor = true;
+        CloseDoor();
+      } else if(!Mode.mode3D && closedDoor)
       {
-        closedDoors = false;
+        closedDoor = false;
       }
     }
 
@@ -26,17 +27,12 @@ public class DoorOpen : MonoBehaviour
     {
       if(canOpen)
       {
-        Debug.Log("DoorOpened");
+        animator.SetBool("OpenDoor", true);
       }
     }
 
-    private void CheckIfCanOpen()
+    private void CloseDoor()
     {
-
-    }
-
-    private void CloseOpenDoors()
-    {
-
+      animator.SetBool("OpenDoor", false);
     }
 }
