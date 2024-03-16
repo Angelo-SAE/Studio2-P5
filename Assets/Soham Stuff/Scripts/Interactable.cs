@@ -10,14 +10,11 @@ public class Interactable : MonoBehaviour
 
     [SerializeField] LayerMask interactable;
 
-    public GameObject interactableObject;
+    public static GameObject interactableObject;
 
     void DetectLayerInteractable()
     {
-        if (Physics.Raycast(transform.position, transform.forward, out interactableHit, rayLength, interactable))
-        {
-            Debug.Log("Interactable layert detecetd");
-        }
+        Physics.Raycast(transform.position, transform.forward, out interactableHit, rayLength, interactable);        
         if(interactableHit.transform is not null)
         {
           interactableObject = interactableHit.transform.gameObject;
