@@ -10,7 +10,7 @@ public class OpenDoor : MonoBehaviour
 
     void Start()
     {
-      keyList.Add(1);
+      keyList.Add(0);
       keyList.Add(2);
       keyList.Add(3);
       keyList.Add(4);
@@ -34,7 +34,7 @@ public class OpenDoor : MonoBehaviour
     {
       if(Interactable.interactableObject is not null)
       {
-        if(Interactable.interactableObject.tag== "Door")
+        if(Interactable.interactableObject.tag == "Door")
         {
           CheckIfDoorNeedsKey();
         }

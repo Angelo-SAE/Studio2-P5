@@ -25,25 +25,21 @@ public class Interactable : MonoBehaviour
 
     void DetectLayerInteractable()
     {
-        Physics.Raycast(transform.position, transform.forward, out interactableHit, rayLength, interactable);        
+        Physics.Raycast(transform.position, transform.forward, out interactableHit, rayLength, interactable);
         if(interactableHit.transform is not null)
         {
-            Debug.Log("Interactable layert detecetd");
+          interactableObject = interactableHit.transform.gameObject;
             GameObject hitObj = interactableHit.collider.gameObject;
-           
+
             if (hitObj.CompareTag("Key"))
             {
-                Debug.Log("Key detected");
                 if(Input.GetMouseButtonDown(0))
                 {
                     collectedObj.Add(hitObj);
                     hitObj.SetActive(false);
                 }
             }
-        }
-        
-        else 
-        {
+        } else {
           interactableObject = null;
         }
     }

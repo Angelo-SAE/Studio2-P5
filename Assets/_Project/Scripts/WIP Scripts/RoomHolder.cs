@@ -11,9 +11,8 @@ public class RoomHolder : MonoBehaviour
     {
       if(Mode.mode3D && !closedOpens)
       {
-        SetDoorStatus();
         closedOpens = true;
-
+        Invoke("SetDoorStatus", 1f);
       } else if(!Mode.mode3D && closedOpens)
       {
         closedOpens = false;

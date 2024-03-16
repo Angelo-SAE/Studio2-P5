@@ -18,6 +18,6 @@ public class Room : MonoBehaviour
 
     private void CheckAndUpdatePosition()
     {
-        transform.position = new Vector3(parentObject.transform.position.x * 18f, 0f,parentObject.transform.position.y * 18f);
+        transform.position = new Vector3(parentObject.transform.position.x * 23f, 0f,parentObject.transform.position.y * 23f);
     }
 }
