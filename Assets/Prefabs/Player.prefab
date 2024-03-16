@@ -451,7 +451,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: adf8df5dea5e8bb4e8a079576db57347, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  keyTypes: 0
   rayLength: 1.5
   interactable:
     serializedVersion: 2
     m_Bits: 64
+  collectedObj: []
