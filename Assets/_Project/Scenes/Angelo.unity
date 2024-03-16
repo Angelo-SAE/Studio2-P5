@@ -6074,6 +6074,15 @@ MonoBehaviour:
   southD: 0
   eastD: 0
   westD: 0
+  northDOpen: 0
+  southDOpen: 0
+  eastDOpen: 0
+  westDOpen: 0
+  closedOpens: 0
+  nDoor: {fileID: 468137306}
+  sDoor: {fileID: 0}
+  eDoor: {fileID: 0}
+  wDoor: {fileID: 0}
 --- !u!1 &354039137
 GameObject:
   m_ObjectHideFlags: 0
@@ -8376,6 +8385,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 100000, guid: 38779c9653e8f684cab84123989672e1, type: 3}
       insertIndex: -1
       addedObject: {fileID: 468137303}
+    - targetCorrespondingSourceObject: {fileID: 100000, guid: 38779c9653e8f684cab84123989672e1, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 468137306}
   m_SourcePrefab: {fileID: 100100000, guid: 38779c9653e8f684cab84123989672e1, type: 3}
 --- !u!4 &468137301 stripped
 Transform:
@@ -8408,6 +8420,22 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.3082635, y: 3.7519445, z: 1.9965181}
   m_Center: {x: -0.076685816, y: 1.8759723, z: -0.99825954}
+--- !u!114 &468137306
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 468137302}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b73272180c2c12a46851525ebac1f096, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  keyColor: blue
+  keyNumber: 5
+  needsKey: 0
+  canOpen: 0
 --- !u!1 &474839450
 GameObject:
   m_ObjectHideFlags: 0
@@ -10045,6 +10073,15 @@ MonoBehaviour:
   southD: 1
   eastD: 0
   westD: 0
+  northDOpen: 0
+  southDOpen: 0
+  eastDOpen: 0
+  westDOpen: 0
+  closedOpens: 0
+  nDoor: {fileID: 0}
+  sDoor: {fileID: 0}
+  eDoor: {fileID: 0}
+  wDoor: {fileID: 0}
 --- !u!1001 &553030626
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10368,6 +10405,15 @@ MonoBehaviour:
   southD: 0
   eastD: 1
   westD: 1
+  northDOpen: 0
+  southDOpen: 0
+  eastDOpen: 0
+  westDOpen: 0
+  closedOpens: 0
+  nDoor: {fileID: 0}
+  sDoor: {fileID: 0}
+  eDoor: {fileID: 0}
+  wDoor: {fileID: 0}
 --- !u!1 &571949356
 GameObject:
   m_ObjectHideFlags: 0
@@ -11419,7 +11465,7 @@ PrefabInstance:
       objectReference: {fileID: 602177735}
     - target: {fileID: 4962723990583366593, guid: fd4cd443e2aa3174ca8fc460a73819f6, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: 38
       objectReference: {fileID: 0}
     - target: {fileID: 4962723990583366593, guid: fd4cd443e2aa3174ca8fc460a73819f6, type: 3}
       propertyPath: m_LocalPosition.y
@@ -11427,7 +11473,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4962723990583366593, guid: fd4cd443e2aa3174ca8fc460a73819f6, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 2.49
+      value: 23.7
       objectReference: {fileID: 0}
     - target: {fileID: 4962723990583366593, guid: fd4cd443e2aa3174ca8fc460a73819f6, type: 3}
       propertyPath: m_LocalRotation.w
@@ -11461,10 +11507,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 8201407657871422423, guid: fd4cd443e2aa3174ca8fc460a73819f6, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 6102305194756402926, guid: fd4cd443e2aa3174ca8fc460a73819f6, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 602177743}
   m_SourcePrefab: {fileID: 100100000, guid: fd4cd443e2aa3174ca8fc460a73819f6, type: 3}
 --- !u!1 &602177735 stripped
 GameObject:
@@ -11476,6 +11529,19 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 8201407657871422423, guid: fd4cd443e2aa3174ca8fc460a73819f6, type: 3}
   m_PrefabInstance: {fileID: 602177734}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &602177743
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 602177735}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fd84c90879d32d24ca2fd76c87178a22, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  keyList: 
 --- !u!1 &607430756
 GameObject:
   m_ObjectHideFlags: 0
@@ -17731,9 +17797,9 @@ MonoBehaviour:
   - {fileID: 1938681207}
   - {fileID: 552949318}
   - {fileID: 1122193092}
-  - {fileID: 1122193092}
-  - {fileID: 1122193092}
-  - {fileID: 1122193092}
+  - {fileID: 352610245}
+  - {fileID: 1334087429}
+  - {fileID: 1650913201}
 --- !u!4 &996593106
 Transform:
   m_ObjectHideFlags: 0
@@ -19799,6 +19865,15 @@ MonoBehaviour:
   southD: 0
   eastD: 0
   westD: 0
+  northDOpen: 0
+  southDOpen: 0
+  eastDOpen: 0
+  westDOpen: 0
+  closedOpens: 0
+  nDoor: {fileID: 0}
+  sDoor: {fileID: 0}
+  eDoor: {fileID: 0}
+  wDoor: {fileID: 0}
 --- !u!1 &1122346560
 GameObject:
   m_ObjectHideFlags: 0
@@ -24088,6 +24163,15 @@ MonoBehaviour:
   southD: 0
   eastD: 1
   westD: 1
+  northDOpen: 0
+  southDOpen: 0
+  eastDOpen: 0
+  westDOpen: 0
+  closedOpens: 0
+  nDoor: {fileID: 0}
+  sDoor: {fileID: 0}
+  eDoor: {fileID: 0}
+  wDoor: {fileID: 0}
 --- !u!1 &1344740117
 GameObject:
   m_ObjectHideFlags: 0
@@ -29933,6 +30017,15 @@ MonoBehaviour:
   southD: 1
   eastD: 0
   westD: 0
+  northDOpen: 0
+  southDOpen: 0
+  eastDOpen: 0
+  westDOpen: 0
+  closedOpens: 0
+  nDoor: {fileID: 0}
+  sDoor: {fileID: 0}
+  eDoor: {fileID: 0}
+  wDoor: {fileID: 0}
 --- !u!1 &1658048069
 GameObject:
   m_ObjectHideFlags: 0
@@ -33776,6 +33869,15 @@ MonoBehaviour:
   southD: 0
   eastD: 0
   westD: 0
+  northDOpen: 0
+  southDOpen: 0
+  eastDOpen: 0
+  westDOpen: 0
+  closedOpens: 0
+  nDoor: {fileID: 0}
+  sDoor: {fileID: 0}
+  eDoor: {fileID: 0}
+  wDoor: {fileID: 0}
 --- !u!1 &1939692878
 GameObject:
   m_ObjectHideFlags: 0
