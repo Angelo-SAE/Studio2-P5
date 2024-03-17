@@ -7,6 +7,12 @@ public class Room : MonoBehaviour
 
     [SerializeField] private GameObject parentObject;
     public bool northD,southD,eastD,westD;
+    public GameObject playerObj;
+
+    void Awake()
+    {
+      Mode.AddRoom(this);
+    }
 
     void Update()
     {
@@ -19,5 +25,21 @@ public class Room : MonoBehaviour
     private void CheckAndUpdatePosition()
     {
         transform.position = new Vector3(parentObject.transform.position.x * 23f, 0f,parentObject.transform.position.y * 23f);
+    }
+
+    private void OnTriggerEnter(Collider col)
+    {
+      if(col.gameObject.tag == "Player")
+      {
+        playerObj = col.gameObject;
+      }
+    }
+
+    private void OnTriggerExit(Collider col)
+    {
+      if(col.gameObject.tag == "Player")
+      {
+        playerObj = null;
+      }
     }
 }
