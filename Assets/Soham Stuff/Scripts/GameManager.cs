@@ -5,13 +5,13 @@ using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
-    [SerializeField] GameObject pasueScreen;
+    [SerializeField] GameObject pauseScreen;
     [SerializeField] int pauseIndex;
 
     private void Start()
     {
         Time.timeScale = 1.0f;
-        pasueScreen.SetActive(false);
+        pauseScreen.SetActive(false);
     }
 
     void PauseGame()
@@ -19,8 +19,8 @@ public class GameManager : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Escape) && pauseIndex % 2 is 0)
         {
             pauseIndex += 1;
+            pauseScreen.SetActive(true);
             Time.timeScale = 0f;
-            pasueScreen.SetActive(true);
             Cursor.lockState = CursorLockMode.Confined;
             Cursor.visible = true;
         }
@@ -29,7 +29,7 @@ public class GameManager : MonoBehaviour
         {
             pauseIndex += 1;
             Time.timeScale = 1;
-            pasueScreen.SetActive(false);
+            pauseScreen.SetActive(false);
             Cursor.lockState = CursorLockMode.Locked;
             Cursor.visible = false;
         }
@@ -37,8 +37,9 @@ public class GameManager : MonoBehaviour
 
     public void Resume()
     {
+        pauseIndex += 1;
         Time.timeScale = 1f;
-        pasueScreen.SetActive(false);
+        pauseScreen.SetActive(false);
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
     }
