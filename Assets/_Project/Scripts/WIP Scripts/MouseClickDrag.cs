@@ -33,10 +33,13 @@ public class MouseClickDrag : MonoBehaviour
         {
           if(targetObject.tag == "Draggable")
           {
-            draggableObject = targetObject.transform.gameObject;
-            mouseClickPosition = mousePosition;
-            Draggable dragScript = draggableObject.GetComponent<Draggable>();
-            origionalPosition = new Vector2(draggableObject.transform.position.x, draggableObject.transform.position.y);
+            if(targetObject.gameObject.GetComponent<Draggable>().canDrag)
+            {
+              draggableObject = targetObject.transform.gameObject;
+              mouseClickPosition = mousePosition;
+              Draggable dragScript = draggableObject.GetComponent<Draggable>();
+              origionalPosition = new Vector2(draggableObject.transform.position.x, draggableObject.transform.position.y);
+            }            
           }
         }
       }

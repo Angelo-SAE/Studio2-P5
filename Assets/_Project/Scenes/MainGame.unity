@@ -3981,6 +3981,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 511774900ffee584db1753ff762f82f8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  canDrag: 0
+  room: {fileID: 398450496}
 --- !u!212 &67608827
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -8584,6 +8586,7 @@ MonoBehaviour:
   eastD: 0
   westD: 1
   playerObj: {fileID: 0}
+  hasPlayer: 0
 --- !u!65 &175741674
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -18972,6 +18975,7 @@ MonoBehaviour:
   eastD: 0
   westD: 1
   playerObj: {fileID: 0}
+  hasPlayer: 0
 --- !u!65 &398450497
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -25583,6 +25587,7 @@ MonoBehaviour:
   eastD: 1
   westD: 0
   playerObj: {fileID: 0}
+  hasPlayer: 0
 --- !u!65 &524025527
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -29000,6 +29005,7 @@ MonoBehaviour:
   eastD: 1
   westD: 1
   playerObj: {fileID: 0}
+  hasPlayer: 0
 --- !u!65 &601390636
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -46145,6 +46151,7 @@ MonoBehaviour:
   eastD: 0
   westD: 0
   playerObj: {fileID: 0}
+  hasPlayer: 0
 --- !u!65 &958510346
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -50095,6 +50102,7 @@ MonoBehaviour:
   eastD: 0
   westD: 0
   playerObj: {fileID: 0}
+  hasPlayer: 0
 --- !u!65 &1044680485
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -52833,6 +52841,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 511774900ffee584db1753ff762f82f8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  canDrag: 0
+  room: {fileID: 1314559799}
 --- !u!212 &1105006949
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -53905,6 +53915,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 511774900ffee584db1753ff762f82f8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  canDrag: 0
+  room: {fileID: 601390635}
 --- !u!212 &1121836941
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -55677,6 +55689,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 511774900ffee584db1753ff762f82f8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  canDrag: 0
+  room: {fileID: 175741673}
 --- !u!212 &1157455750
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -60991,6 +61005,7 @@ MonoBehaviour:
   eastD: 0
   westD: 0
   playerObj: {fileID: 0}
+  hasPlayer: 0
 --- !u!65 &1249313606
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -64206,6 +64221,7 @@ MonoBehaviour:
   eastD: 0
   westD: 0
   playerObj: {fileID: 0}
+  hasPlayer: 0
 --- !u!65 &1314559800
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -78167,6 +78183,7 @@ MonoBehaviour:
   eastD: 1
   westD: 0
   playerObj: {fileID: 0}
+  hasPlayer: 0
 --- !u!65 &1577949176
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -78765,6 +78782,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 511774900ffee584db1753ff762f82f8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  canDrag: 0
+  room: {fileID: 1044680484}
 --- !u!212 &1591245912
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -89342,6 +89361,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 511774900ffee584db1753ff762f82f8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  canDrag: 0
+  room: {fileID: 524025526}
 --- !u!212 &1786442688
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -93522,6 +93543,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 511774900ffee584db1753ff762f82f8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  canDrag: 0
+  room: {fileID: 958510345}
 --- !u!212 &1885162574
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -95525,6 +95548,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 511774900ffee584db1753ff762f82f8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  canDrag: 0
+  room: {fileID: 1577949175}
 --- !u!212 &1926617508
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -101228,6 +101253,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 511774900ffee584db1753ff762f82f8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  canDrag: 0
+  room: {fileID: 1249313605}
 --- !u!212 &2032634938
 SpriteRenderer:
   m_ObjectHideFlags: 0

@@ -8,6 +8,7 @@ public class Room : MonoBehaviour
     [SerializeField] private GameObject parentObject;
     public bool northD,southD,eastD,westD;
     public GameObject playerObj;
+    public bool hasPlayer;
 
     void Awake()
     {
@@ -32,6 +33,7 @@ public class Room : MonoBehaviour
       if(col.gameObject.tag == "Player")
       {
         playerObj = col.gameObject;
+        hasPlayer = true;
       }
     }
 
@@ -40,6 +42,7 @@ public class Room : MonoBehaviour
       if(col.gameObject.tag == "Player")
       {
         playerObj = null;
+        hasPlayer = false;
       }
     }
 }

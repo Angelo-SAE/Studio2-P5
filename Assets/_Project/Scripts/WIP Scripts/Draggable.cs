@@ -4,10 +4,17 @@ using UnityEngine;
 
 public class Draggable : MonoBehaviour
 {
-    private Collider col;
+    public bool canDrag;
 
-    void Start()
+    [SerializeField] private Room room;
+
+    void Update()
     {
-      col = GetComponentInChildren<Collider>();
+      if(room.hasPlayer)
+      {
+        canDrag = false;
+      } else {
+        canDrag = true;
+      }
     }
 }

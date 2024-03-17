@@ -34,13 +34,11 @@ public class Mode : MonoBehaviour
     {
       foreach(Room room in rooms)
       {
-        if(room.playerObj != null)
+        if(room.hasPlayer)
         {
-          Debug.Log(room.playerObj);
           return true;
         }
       }
-      Debug.Log("beafo");
       return false;
     }
 
