@@ -21724,7 +21724,7 @@ PrefabInstance:
       objectReference: {fileID: 426917843}
     - target: {fileID: 2346844680879078670, guid: fd4cd443e2aa3174ca8fc460a73819f6, type: 3}
       propertyPath: mouseSense
-      value: 4
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3256477908325824465, guid: fd4cd443e2aa3174ca8fc460a73819f6, type: 3}
       propertyPath: m_LocalScale.x
@@ -36993,8 +36993,8 @@ Transform:
   m_GameObject: {fileID: 726751585}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.30890512, y: 0.3159157, z: 123.9}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 0.18, y: 1.162, z: 134.86}
+  m_LocalScale: {x: -1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -45329,13 +45329,13 @@ Camera:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 1
-    height: 1
+    width: 0.56
+    height: 0.67
   near clip plane: 0.3
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 2
+  orthographic size: 3
   m_Depth: 0
   m_CullingMask:
     serializedVersion: 2
@@ -45360,7 +45360,7 @@ Transform:
   m_GameObject: {fileID: 928425428}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.988, y: 1.505, z: 112.7}
+  m_LocalPosition: {x: 0.27, y: 1.59, z: 133.88}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
