@@ -5,18 +5,51 @@ using UnityEngine.SceneManagement;
 
 public class StartManager : MonoBehaviour
 {
-    public void Tutorial()
+
+    [SerializeField] AudioSource buttonPress;
+
+
+    private void Start()
     {
-        SceneManager.LoadScene("Tutorial");
+        buttonPress.mute = true;
     }
 
-    public void StartGame()
+    IEnumerator Tutorial()
     {
+        yield return new WaitForSeconds(1);
+        SceneManager.LoadScene("Tutorial");
+    }
+    
+    public void PlayTutorial()
+    {
+        StartCoroutine(Tutorial());
+    }
+
+    IEnumerator StartGame()
+    {
+        yield return new WaitForSeconds(1);
         SceneManager.LoadScene("MainGame");
     }
 
-    public void Quit()
+    public void PlayStartGame()
     {
+        StartCoroutine(StartGame());
+    }
+
+    IEnumerator Quit()
+    {
+        yield return new WaitForSeconds(1);
         Application.Quit();
+    }
+
+    public void PlayQuit()
+    {
+        StartCoroutine (Quit());
+    }
+
+    public void ButtonAudio()
+    {
+        buttonPress.mute = false;
+        buttonPress.Play();
     }
 }

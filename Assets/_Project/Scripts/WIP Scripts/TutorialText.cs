@@ -3,20 +3,26 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 
-public class DeactivateTimer : MonoBehaviour
+public class TutorialText : MonoBehaviour
 {
     public static string textText;
 
-    [SerializeField] private TMP_Text textbox;
+    private TMP_Text textBox;
+
+    void Awake()
+    {
+      textBox = GetComponent<TMP_Text>();
+    }
 
     void OnEnable()
     {
+      textBox.text = textText;
       StartCoroutine(DeactivateObject());
     }
 
     private IEnumerator DeactivateObject()
     {
-      yield return new WaitForSeconds(4f);
+      yield return new WaitForSeconds(2f);
       gameObject.SetActive(false);
     }
 }

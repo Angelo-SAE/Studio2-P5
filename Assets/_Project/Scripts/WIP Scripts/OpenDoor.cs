@@ -6,6 +6,7 @@ public class OpenDoor : MonoBehaviour
 {
 
     public static List<int> keyList = new List<int>();
+    [SerializeField] private GameObject textPopup;
     private DoorOpen currentDoor;
 
     void Update()
@@ -48,10 +49,12 @@ public class OpenDoor : MonoBehaviour
       if(keyList.Contains(currentDoor.keyNumber))
       {
         currentDoor.needsKey = false;
-        Debug.Log(currentDoor.keyColor + " key used");
+        TutorialText.textText = currentDoor.keyColor + " key used";
+        textPopup.SetActive(true);
         OpenCurrentDoor();
       } else {
-        Debug.Log("Missing: " + currentDoor.keyColor + " key");
+        TutorialText.textText = "Missing: " + currentDoor.keyColor + " key";
+        textPopup.SetActive(true);
       }
     }
 
