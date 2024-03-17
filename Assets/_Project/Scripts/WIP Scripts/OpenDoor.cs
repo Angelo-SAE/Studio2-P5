@@ -5,17 +5,8 @@ using UnityEngine;
 public class OpenDoor : MonoBehaviour
 {
 
-    public List<int> keyList = new List<int>();
+    public static List<int> keyList = new List<int>();
     private DoorOpen currentDoor;
-
-    void Start()
-    {
-      keyList.Add(0);
-      keyList.Add(2);
-      keyList.Add(3);
-      keyList.Add(4);
-      keyList.Add(5);
-    }
 
     void Update()
     {

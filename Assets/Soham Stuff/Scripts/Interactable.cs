@@ -5,7 +5,9 @@ using UnityEngine;
 public enum KeyTypes
 {
     blueKey,
-    redKey
+    redKey,
+    greenKey,
+    lightBlueKey
 }
 
 public class Interactable : MonoBehaviour
@@ -20,8 +22,6 @@ public class Interactable : MonoBehaviour
 
     public static GameObject interactableObject;
 
-    [SerializeField] List<GameObject> collectedObj = new List<GameObject>();
-
 
     void DetectLayerInteractable()
     {
@@ -29,14 +29,12 @@ public class Interactable : MonoBehaviour
         if(interactableHit.transform is not null)
         {
           interactableObject = interactableHit.transform.gameObject;
-            GameObject hitObj = interactableHit.collider.gameObject;
-
-            if (hitObj.CompareTag("Key"))
+            if (interactableObject.CompareTag("Key"))
             {
                 if(Input.GetMouseButtonDown(0))
                 {
-                    collectedObj.Add(hitObj);
-                    hitObj.SetActive(false);
+                    OpenDoor.keyList.Add(interactableObject.GetComponent<Key>().keyColor);
+                    interactableObject.SetActive(false);
                 }
             }
         } else {
