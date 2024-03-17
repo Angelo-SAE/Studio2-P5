@@ -8,6 +8,7 @@ TagManager:
   - Door
   - Key
   - Pause
+  - Tablet
   layers:
   - Default
   - TransparentFX

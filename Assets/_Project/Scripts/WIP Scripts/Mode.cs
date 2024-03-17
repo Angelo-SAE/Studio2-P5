@@ -9,9 +9,14 @@ public class Mode : MonoBehaviour
 
     public static List<Room> rooms = new List<Room>();
 
+    void Awake()
+    {
+      mode3D = true;
+    }
+
     void Update()
     {
-      if(Input.GetKeyDown(KeyCode.R))
+      if(Input.GetKeyDown(KeyCode.R) && Tablet.hasTablet)
       {
         ChangeMode();
       }
