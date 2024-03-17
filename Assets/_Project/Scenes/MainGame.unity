@@ -9140,12 +9140,12 @@ GameObject:
   - component: {fileID: 195558554}
   - component: {fileID: 195558553}
   m_Layer: 5
-  m_Name: Missing Required Object/Used Object
+  m_Name: TextPopup
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &195558552
 RectTransform:
   m_ObjectHideFlags: 0
@@ -9177,7 +9177,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ba07e492c869e944a0f479fc27d3f3a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  textbox: {fileID: 0}
 --- !u!114 &195558554
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9198,7 +9197,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Missing red key
+  m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -21674,6 +21673,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fd84c90879d32d24ca2fd76c87178a22, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  textPopup: {fileID: 195558551}
 --- !u!1 &427285268
 GameObject:
   m_ObjectHideFlags: 0
