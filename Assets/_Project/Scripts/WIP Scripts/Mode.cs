@@ -7,6 +7,8 @@ public class Mode : MonoBehaviour
 
     public static bool mode3D;
 
+    public static List<Room> rooms = new List<Room>();
+
     void Update()
     {
       if(Input.GetKeyDown(KeyCode.R))
@@ -17,11 +19,33 @@ public class Mode : MonoBehaviour
 
     private void ChangeMode()
     {
-      if(mode3D)
+      if(CheckIfCanChangeMode())
       {
-        mode3D = false;
-      } else {
-        mode3D = true;
+        if(mode3D)
+        {
+          mode3D = false;
+        } else {
+          mode3D = true;
+        }
       }
+    }
+
+    private bool CheckIfCanChangeMode()
+    {
+      foreach(Room room in rooms)
+      {
+        if(room.playerObj != null)
+        {
+          Debug.Log(room.playerObj);
+          return true;
+        }
+      }
+      Debug.Log("beafo");
+      return false;
+    }
+
+    public static void AddRoom(Room room)
+    {
+      rooms.Add(room);
     }
 }

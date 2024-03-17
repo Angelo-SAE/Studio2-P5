@@ -8542,6 +8542,7 @@ GameObject:
   m_Component:
   - component: {fileID: 175741672}
   - component: {fileID: 175741673}
+  - component: {fileID: 175741674}
   m_Layer: 0
   m_Name: Parents Room Holder
   m_TagString: Untagged
@@ -8582,6 +8583,28 @@ MonoBehaviour:
   southD: 1
   eastD: 0
   westD: 1
+  playerObj: {fileID: 0}
+--- !u!65 &175741674
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 175741671}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 15, y: 6.044469, z: 15}
+  m_Center: {x: 0, y: 2.5222344, z: 0}
 --- !u!1 &175926385
 GameObject:
   m_ObjectHideFlags: 0
@@ -18907,6 +18930,7 @@ GameObject:
   m_Component:
   - component: {fileID: 398450495}
   - component: {fileID: 398450496}
+  - component: {fileID: 398450497}
   m_Layer: 0
   m_Name: Kitchen Holder
   m_TagString: Untagged
@@ -18947,6 +18971,28 @@ MonoBehaviour:
   southD: 0
   eastD: 0
   westD: 1
+  playerObj: {fileID: 0}
+--- !u!65 &398450497
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 398450494}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 15, y: 6.044469, z: 15}
+  m_Center: {x: 0, y: 2.5222344, z: 0}
 --- !u!1 &398696584
 GameObject:
   m_ObjectHideFlags: 0
@@ -20994,8 +21040,24 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 9134713410248480758, guid: fd4cd443e2aa3174ca8fc460a73819f6, type: 3}
+      propertyPath: m_ClearFlags
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 9134713410248480758, guid: fd4cd443e2aa3174ca8fc460a73819f6, type: 3}
       propertyPath: m_RenderingPath
       value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 9134713410248480758, guid: fd4cd443e2aa3174ca8fc460a73819f6, type: 3}
+      propertyPath: m_BackGroundColor.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9134713410248480758, guid: fd4cd443e2aa3174ca8fc460a73819f6, type: 3}
+      propertyPath: m_BackGroundColor.g
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9134713410248480758, guid: fd4cd443e2aa3174ca8fc460a73819f6, type: 3}
+      propertyPath: m_BackGroundColor.r
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -25479,6 +25541,7 @@ GameObject:
   m_Component:
   - component: {fileID: 524025525}
   - component: {fileID: 524025526}
+  - component: {fileID: 524025527}
   m_Layer: 0
   m_Name: Sitting Room Holder
   m_TagString: Untagged
@@ -25519,6 +25582,28 @@ MonoBehaviour:
   southD: 1
   eastD: 1
   westD: 0
+  playerObj: {fileID: 0}
+--- !u!65 &524025527
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 524025524}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 15, y: 6.044469, z: 15}
+  m_Center: {x: 0, y: 2.5222344, z: 0}
 --- !u!1 &527227098
 GameObject:
   m_ObjectHideFlags: 0
@@ -28873,6 +28958,7 @@ GameObject:
   m_Component:
   - component: {fileID: 601390634}
   - component: {fileID: 601390635}
+  - component: {fileID: 601390636}
   m_Layer: 0
   m_Name: Dinning Room Holder
   m_TagString: Untagged
@@ -28913,6 +28999,28 @@ MonoBehaviour:
   southD: 0
   eastD: 1
   westD: 1
+  playerObj: {fileID: 0}
+--- !u!65 &601390636
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 601390633}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 15, y: 6.044469, z: 15}
+  m_Center: {x: 0, y: 2.5222344, z: 0}
 --- !u!1 &604173460
 GameObject:
   m_ObjectHideFlags: 0
@@ -45995,6 +46103,7 @@ GameObject:
   m_Component:
   - component: {fileID: 958510344}
   - component: {fileID: 958510345}
+  - component: {fileID: 958510346}
   m_Layer: 0
   m_Name: Library Office Holder
   m_TagString: Untagged
@@ -46035,6 +46144,28 @@ MonoBehaviour:
   southD: 0
   eastD: 0
   westD: 0
+  playerObj: {fileID: 0}
+--- !u!65 &958510346
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 958510343}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 15, y: 6.044469, z: 15}
+  m_Center: {x: 0, y: 2.5222344, z: 0}
 --- !u!1 &960843189
 GameObject:
   m_ObjectHideFlags: 0
@@ -49922,6 +50053,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1044680483}
   - component: {fileID: 1044680484}
+  - component: {fileID: 1044680485}
   m_Layer: 0
   m_Name: Starting Room Holder
   m_TagString: Untagged
@@ -49962,6 +50094,28 @@ MonoBehaviour:
   southD: 0
   eastD: 0
   westD: 0
+  playerObj: {fileID: 0}
+--- !u!65 &1044680485
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1044680482}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 15, y: 6.044469, z: 15}
+  m_Center: {x: 0, y: 2.5222344, z: 0}
 --- !u!1 &1044904083
 GameObject:
   m_ObjectHideFlags: 0
@@ -60794,6 +60948,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1249313604}
   - component: {fileID: 1249313605}
+  - component: {fileID: 1249313606}
   m_Layer: 0
   m_Name: Toilet Room Holder
   m_TagString: Untagged
@@ -60835,6 +60990,28 @@ MonoBehaviour:
   southD: 0
   eastD: 0
   westD: 0
+  playerObj: {fileID: 0}
+--- !u!65 &1249313606
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1249313603}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 15, y: 6.044469, z: 15}
+  m_Center: {x: 0, y: 2.5222344, z: 0}
 --- !u!1 &1255449720
 GameObject:
   m_ObjectHideFlags: 0
@@ -63987,6 +64164,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1314559798}
   - component: {fileID: 1314559799}
+  - component: {fileID: 1314559800}
   m_Layer: 0
   m_Name: Exit Holder
   m_TagString: Untagged
@@ -64027,6 +64205,28 @@ MonoBehaviour:
   southD: 1
   eastD: 0
   westD: 0
+  playerObj: {fileID: 0}
+--- !u!65 &1314559800
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1314559797}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 15, y: 6.044469, z: 15}
+  m_Center: {x: 0, y: 2.5222344, z: 0}
 --- !u!1 &1315648962
 GameObject:
   m_ObjectHideFlags: 0
@@ -77925,6 +78125,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1577949174}
   - component: {fileID: 1577949175}
+  - component: {fileID: 1577949176}
   m_Layer: 0
   m_Name: Siblings Room Holder
   m_TagString: Untagged
@@ -77965,6 +78166,28 @@ MonoBehaviour:
   southD: 1
   eastD: 1
   westD: 0
+  playerObj: {fileID: 0}
+--- !u!65 &1577949176
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1577949173}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 15, y: 6.044469, z: 15}
+  m_Center: {x: 0, y: 2.5222344, z: 0}
 --- !u!1 &1579950738
 GameObject:
   m_ObjectHideFlags: 0
