@@ -18,7 +18,7 @@ public class Movement : MonoBehaviour
         float inputx = Input.GetAxis("Horizontal");
         float inputz = Input.GetAxis("Vertical");
 
-        Vector3 movement = (transform.forward * inputz + transform.right * inputx) * Speed * 100 * Time.deltaTime;
+        Vector3 movement = (transform.forward * inputz + transform.right * inputx).normalized * Speed * 100 * Time.deltaTime;
         playerRb.velocity = movement;
     }
 }
