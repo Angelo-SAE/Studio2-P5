@@ -16,10 +16,10 @@ public class StartManager : MonoBehaviour
 
     IEnumerator Tutorial()
     {
-        yield return new WaitForSeconds(1);
+        yield return new WaitForSeconds(0.3f);
         SceneManager.LoadScene("Tutorial");
     }
-    
+
     public void PlayTutorial()
     {
         StartCoroutine(Tutorial());
@@ -27,7 +27,7 @@ public class StartManager : MonoBehaviour
 
     IEnumerator StartGame()
     {
-        yield return new WaitForSeconds(1);
+        yield return new WaitForSeconds(0.3f);
         SceneManager.LoadScene("MainGame");
     }
 
@@ -38,7 +38,7 @@ public class StartManager : MonoBehaviour
 
     IEnumerator Quit()
     {
-        yield return new WaitForSeconds(1);
+        yield return new WaitForSeconds(0.3f);
         Application.Quit();
     }
 

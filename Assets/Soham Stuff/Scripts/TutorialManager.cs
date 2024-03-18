@@ -14,7 +14,7 @@ public class TutorialManager : MonoBehaviour
 
     IEnumerator Continue()
     {
-        yield return new WaitForSeconds(1f);
+        yield return new WaitForSeconds(0.3f);
         Scene scene = SceneManager.GetActiveScene();
         SceneManager.LoadScene(scene.buildIndex + 1);
     }
@@ -26,7 +26,7 @@ public class TutorialManager : MonoBehaviour
 
     IEnumerator MainMenu()
     {
-        yield return new WaitForSeconds(1f);
+        yield return new WaitForSeconds(0.3f);
         SceneManager.LoadScene(0);
     }
 
@@ -37,7 +37,7 @@ public class TutorialManager : MonoBehaviour
 
     public void ButtonAudio()
     {
-        buttonAudio.mute = false; 
+        buttonAudio.mute = false;
         buttonAudio.Play();
     }
 }
