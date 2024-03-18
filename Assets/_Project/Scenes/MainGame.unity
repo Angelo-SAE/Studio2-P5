@@ -4458,6 +4458,7 @@ MonoBehaviour:
   keyNumber: 4
   needsKey: 1
   canOpen: 0
+  rain: {fileID: 0}
   isLastDoor: 0
   animator: {fileID: 72887253}
 --- !u!95 &72887253
@@ -6391,6 +6392,7 @@ MonoBehaviour:
   keyNumber: 0
   needsKey: 0
   canOpen: 0
+  rain: {fileID: 0}
   isLastDoor: 0
   animator: {fileID: 110252455}
 --- !u!95 &110252455
@@ -22902,6 +22904,7 @@ MonoBehaviour:
   keyNumber: 2
   needsKey: 1
   canOpen: 0
+  rain: {fileID: 0}
   isLastDoor: 0
   animator: {fileID: 427285274}
 --- !u!95 &427285274
@@ -37682,6 +37685,7 @@ MonoBehaviour:
   keyNumber: 0
   needsKey: 0
   canOpen: 0
+  rain: {fileID: 0}
   isLastDoor: 0
   animator: {fileID: 718934596}
 --- !u!95 &718934596
@@ -39173,6 +39177,7 @@ MonoBehaviour:
   keyNumber: 0
   needsKey: 0
   canOpen: 0
+  rain: {fileID: 0}
   isLastDoor: 0
   animator: {fileID: 739479299}
 --- !u!95 &739479299
@@ -41679,6 +41684,7 @@ MonoBehaviour:
   keyNumber: 0
   needsKey: 0
   canOpen: 0
+  rain: {fileID: 0}
   isLastDoor: 0
   animator: {fileID: 801819358}
 --- !u!95 &801819358
@@ -51320,6 +51326,7 @@ MonoBehaviour:
   keyNumber: 0
   needsKey: 0
   canOpen: 0
+  rain: {fileID: 0}
   isLastDoor: 0
   animator: {fileID: 1007956439}
 --- !u!95 &1007956439
@@ -53813,6 +53820,7 @@ MonoBehaviour:
   keyNumber: 0
   needsKey: 0
   canOpen: 0
+  rain: {fileID: 0}
   isLastDoor: 0
   animator: {fileID: 1046987588}
 --- !u!95 &1046987588
@@ -59080,6 +59088,7 @@ MonoBehaviour:
   keyNumber: 0
   needsKey: 0
   canOpen: 0
+  rain: {fileID: 0}
   isLastDoor: 0
   animator: {fileID: 1154814413}
 --- !u!95 &1154814413
@@ -69173,6 +69182,7 @@ MonoBehaviour:
   keyNumber: 0
   needsKey: 0
   canOpen: 0
+  rain: {fileID: 0}
   isLastDoor: 0
   animator: {fileID: 1345576890}
 --- !u!95 &1345576890
@@ -69990,6 +70000,7 @@ MonoBehaviour:
   keyNumber: 0
   needsKey: 0
   canOpen: 0
+  rain: {fileID: 0}
   isLastDoor: 0
   animator: {fileID: 1353921553}
 --- !u!95 &1353921553
@@ -81122,6 +81133,7 @@ MonoBehaviour:
   keyNumber: 0
   needsKey: 0
   canOpen: 0
+  rain: {fileID: 0}
   isLastDoor: 0
   animator: {fileID: 1538710542}
 --- !u!95 &1538710542
@@ -83457,6 +83469,7 @@ MonoBehaviour:
   keyNumber: 3
   needsKey: 1
   canOpen: 0
+  rain: {fileID: 1025462130}
   isLastDoor: 1
   animator: {fileID: 1575457456}
 --- !u!95 &1575457456
@@ -90087,6 +90100,7 @@ MonoBehaviour:
   keyNumber: 1
   needsKey: 1
   canOpen: 0
+  rain: {fileID: 0}
   isLastDoor: 0
   animator: {fileID: 1681377759}
 --- !u!95 &1681377759
@@ -100163,6 +100177,7 @@ MonoBehaviour:
   keyNumber: 0
   needsKey: 0
   canOpen: 0
+  rain: {fileID: 0}
   isLastDoor: 0
   animator: {fileID: 1879830315}
 --- !u!95 &1879830315

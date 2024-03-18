@@ -49,6 +49,12 @@ public class Interactable : MonoBehaviour
 
     private void Update()
     {
-        DetectLayerInteractable();
+        if(Mode.mode3D)
+        {
+          DetectLayerInteractable();
+        } else {
+          interactableObject = null;
+        }
+
     }
 }

@@ -15,10 +15,15 @@ public class Movement : MonoBehaviour
 
     private void FixedUpdate()
     {
-        float inputx = Input.GetAxis("Horizontal");
-        float inputz = Input.GetAxis("Vertical");
+        if(Mode.mode3D)
+        {
+          float inputx = Input.GetAxis("Horizontal");
+          float inputz = Input.GetAxis("Vertical");
 
-        Vector3 movement = (transform.forward * inputz + transform.right * inputx).normalized * Speed * 100 * Time.deltaTime;
-        playerRb.velocity = movement;
+          Vector3 movement = (transform.forward * inputz + transform.right * inputx).normalized * Speed * 100 * Time.deltaTime;
+          playerRb.velocity = movement;
+        } else {
+          playerRb.velocity = Vector3.zero;
+        }
     }
 }
