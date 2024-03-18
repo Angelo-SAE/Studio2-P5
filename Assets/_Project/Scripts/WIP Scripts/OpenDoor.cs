@@ -40,7 +40,7 @@ public class OpenDoor : MonoBehaviour
       {
         CheckForAndUseKey();
       } else {
-        OpenCurrentDoor();
+        OpenCloseCurrentDoor();
       }
     }
 
@@ -51,15 +51,21 @@ public class OpenDoor : MonoBehaviour
         currentDoor.needsKey = false;
         TutorialText.textText = currentDoor.keyColor + " key used";
         textPopup.SetActive(true);
-        OpenCurrentDoor();
+        OpenCloseCurrentDoor();
       } else {
         TutorialText.textText = "Missing: " + currentDoor.keyColor + " key";
         textPopup.SetActive(true);
       }
     }
 
-    private void OpenCurrentDoor()
+    private void OpenCloseCurrentDoor()
     {
-      currentDoor.OpenDoor();
+      if(currentDoor.closedDoor)
+      {
+        currentDoor.OpenDoor();
+      } else {
+        currentDoor.CloseDoor();
+      }
+
     }
 }

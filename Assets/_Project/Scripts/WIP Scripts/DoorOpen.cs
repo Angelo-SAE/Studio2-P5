@@ -8,20 +8,22 @@ public class DoorOpen : MonoBehaviour
     public int keyNumber;
     public bool needsKey;
     public bool canOpen;
+    public bool closedDoor;
+    [SerializeField] private GameObject openDoorAudio, closeDoorAudio;
     [SerializeField] private AudioSource rain;
     [SerializeField] private bool isLastDoor;
-    private bool closedDoor;
     [SerializeField] private Animator animator;
+    private bool resetDoor;
 
     void Update()
     {
-      if(Mode.mode3D && !closedDoor)
+      if(Mode.mode3D && !closedDoor && resetDoor)
       {
-        closedDoor = true;
+        resetDoor = false;
         CloseDoor();
-      } else if(!Mode.mode3D && closedDoor)
+      } else if(!Mode.mode3D && !closedDoor && !resetDoor)
       {
-        closedDoor = false;
+        resetDoor = true;
       }
     }
 
@@ -29,18 +31,23 @@ public class DoorOpen : MonoBehaviour
     {
       if(canOpen)
       {
+        closedDoor = false;
         animator.SetBool("OpenDoor", true);
+        Instantiate(openDoorAudio, transform.position, transform.rotation, transform);
       } else if(isLastDoor)
       {
         animator.SetBool("OpenDoor", true);
+        Instantiate(openDoorAudio, transform.position, transform.rotation, transform);
         Tablet.hasTablet = false;
         GameManager.canPause = false;
         rain.Stop();
       }
     }
 
-    private void CloseDoor()
+    public void CloseDoor()
     {
+      closedDoor = true;
       animator.SetBool("OpenDoor", false);
+      Instantiate(closeDoorAudio, transform.position, transform.rotation, transform);
     }
 }
