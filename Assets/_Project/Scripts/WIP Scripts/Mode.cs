@@ -16,7 +16,7 @@ public class Mode : MonoBehaviour
 
     void Update()
     {
-      if(Input.GetKeyDown(KeyCode.R) && Tablet.hasTablet)
+      if(Input.GetKeyDown(KeyCode.R) && Tablet.hasTablet && !GameManager.isPaused)
       {
         ChangeMode();
       }

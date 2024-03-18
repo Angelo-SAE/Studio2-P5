@@ -41,8 +41,13 @@ public class Room : MonoBehaviour
     {
       if(col.gameObject.tag == "Player")
       {
-        playerObj = null;
-        hasPlayer = false;
+        RemovePlayer();
       }
+    }
+
+    public void RemovePlayer()
+    {
+      playerObj = null;
+      hasPlayer = false;
     }
 }

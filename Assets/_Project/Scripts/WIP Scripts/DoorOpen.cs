@@ -8,6 +8,7 @@ public class DoorOpen : MonoBehaviour
     public int keyNumber;
     public bool needsKey;
     public bool canOpen;
+    [SerializeField] private bool isLastDoor;
     private bool closedDoor;
     [SerializeField] private Animator animator;
 
@@ -25,9 +26,10 @@ public class DoorOpen : MonoBehaviour
 
     public void OpenDoor()
     {
-      if(canOpen)
+      if(canOpen || isLastDoor)
       {
         animator.SetBool("OpenDoor", true);
+        Tablet.hasTablet = false;
       }
     }
 
