@@ -22,7 +22,7 @@ public class TutorialText : MonoBehaviour
 
     private IEnumerator DeactivateObject()
     {
-      yield return new WaitForSeconds(2f);
+      yield return new WaitForSeconds(1f);
       gameObject.SetActive(false);
     }
 }
