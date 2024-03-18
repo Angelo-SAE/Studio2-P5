@@ -4458,6 +4458,9 @@ MonoBehaviour:
   keyNumber: 4
   needsKey: 1
   canOpen: 0
+  closedDoor: 1
+  openDoorAudio: {fileID: 8161771736524475750, guid: b01ac07006c18ad4bb3feb5540f95e6a, type: 3}
+  closeDoorAudio: {fileID: 4531315096740686391, guid: b19fc9e65f8597d4cac97440d583e65a, type: 3}
   rain: {fileID: 0}
   isLastDoor: 0
   animator: {fileID: 72887253}
@@ -6392,6 +6395,9 @@ MonoBehaviour:
   keyNumber: 0
   needsKey: 0
   canOpen: 0
+  closedDoor: 1
+  openDoorAudio: {fileID: 8161771736524475750, guid: b01ac07006c18ad4bb3feb5540f95e6a, type: 3}
+  closeDoorAudio: {fileID: 4531315096740686391, guid: b19fc9e65f8597d4cac97440d583e65a, type: 3}
   rain: {fileID: 0}
   isLastDoor: 0
   animator: {fileID: 110252455}
@@ -11048,7 +11054,7 @@ Transform:
   m_GameObject: {fileID: 210548383}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -1, z: -0, w: 0}
-  m_LocalPosition: {x: 1.2, y: 2.191343, z: 6.5}
+  m_LocalPosition: {x: 1.2, y: 2.191343, z: 6.273}
   m_LocalScale: {x: 0.7838222, y: 0.78382194, z: 0.7838223}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -11995,7 +12001,7 @@ Transform:
   m_GameObject: {fileID: 235940222}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0.7071068, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: -1.78, y: -0.026873015, z: 6.32}
+  m_LocalPosition: {x: -1.78, y: -0.026873015, z: 6.093}
   m_LocalScale: {x: 0.7838218, y: 0.78382194, z: 0.7838218}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -22904,6 +22910,9 @@ MonoBehaviour:
   keyNumber: 2
   needsKey: 1
   canOpen: 0
+  closedDoor: 1
+  openDoorAudio: {fileID: 8161771736524475750, guid: b01ac07006c18ad4bb3feb5540f95e6a, type: 3}
+  closeDoorAudio: {fileID: 4531315096740686391, guid: b19fc9e65f8597d4cac97440d583e65a, type: 3}
   rain: {fileID: 0}
   isLastDoor: 0
   animator: {fileID: 427285274}
@@ -37685,6 +37694,9 @@ MonoBehaviour:
   keyNumber: 0
   needsKey: 0
   canOpen: 0
+  closedDoor: 1
+  openDoorAudio: {fileID: 8161771736524475750, guid: b01ac07006c18ad4bb3feb5540f95e6a, type: 3}
+  closeDoorAudio: {fileID: 4531315096740686391, guid: b19fc9e65f8597d4cac97440d583e65a, type: 3}
   rain: {fileID: 0}
   isLastDoor: 0
   animator: {fileID: 718934596}
@@ -39177,6 +39189,9 @@ MonoBehaviour:
   keyNumber: 0
   needsKey: 0
   canOpen: 0
+  closedDoor: 1
+  openDoorAudio: {fileID: 8161771736524475750, guid: b01ac07006c18ad4bb3feb5540f95e6a, type: 3}
+  closeDoorAudio: {fileID: 4531315096740686391, guid: b19fc9e65f8597d4cac97440d583e65a, type: 3}
   rain: {fileID: 0}
   isLastDoor: 0
   animator: {fileID: 739479299}
@@ -41684,6 +41699,9 @@ MonoBehaviour:
   keyNumber: 0
   needsKey: 0
   canOpen: 0
+  closedDoor: 1
+  openDoorAudio: {fileID: 8161771736524475750, guid: b01ac07006c18ad4bb3feb5540f95e6a, type: 3}
+  closeDoorAudio: {fileID: 4531315096740686391, guid: b19fc9e65f8597d4cac97440d583e65a, type: 3}
   rain: {fileID: 0}
   isLastDoor: 0
   animator: {fileID: 801819358}
@@ -51326,6 +51344,9 @@ MonoBehaviour:
   keyNumber: 0
   needsKey: 0
   canOpen: 0
+  closedDoor: 1
+  openDoorAudio: {fileID: 8161771736524475750, guid: b01ac07006c18ad4bb3feb5540f95e6a, type: 3}
+  closeDoorAudio: {fileID: 4531315096740686391, guid: b19fc9e65f8597d4cac97440d583e65a, type: 3}
   rain: {fileID: 0}
   isLastDoor: 0
   animator: {fileID: 1007956439}
@@ -53820,6 +53841,9 @@ MonoBehaviour:
   keyNumber: 0
   needsKey: 0
   canOpen: 0
+  closedDoor: 1
+  openDoorAudio: {fileID: 8161771736524475750, guid: b01ac07006c18ad4bb3feb5540f95e6a, type: 3}
+  closeDoorAudio: {fileID: 4531315096740686391, guid: b19fc9e65f8597d4cac97440d583e65a, type: 3}
   rain: {fileID: 0}
   isLastDoor: 0
   animator: {fileID: 1046987588}
@@ -59088,6 +59112,9 @@ MonoBehaviour:
   keyNumber: 0
   needsKey: 0
   canOpen: 0
+  closedDoor: 1
+  openDoorAudio: {fileID: 8161771736524475750, guid: b01ac07006c18ad4bb3feb5540f95e6a, type: 3}
+  closeDoorAudio: {fileID: 4531315096740686391, guid: b19fc9e65f8597d4cac97440d583e65a, type: 3}
   rain: {fileID: 0}
   isLastDoor: 0
   animator: {fileID: 1154814413}
@@ -69182,6 +69209,9 @@ MonoBehaviour:
   keyNumber: 0
   needsKey: 0
   canOpen: 0
+  closedDoor: 1
+  openDoorAudio: {fileID: 8161771736524475750, guid: b01ac07006c18ad4bb3feb5540f95e6a, type: 3}
+  closeDoorAudio: {fileID: 4531315096740686391, guid: b19fc9e65f8597d4cac97440d583e65a, type: 3}
   rain: {fileID: 0}
   isLastDoor: 0
   animator: {fileID: 1345576890}
@@ -70000,6 +70030,9 @@ MonoBehaviour:
   keyNumber: 0
   needsKey: 0
   canOpen: 0
+  closedDoor: 1
+  openDoorAudio: {fileID: 8161771736524475750, guid: b01ac07006c18ad4bb3feb5540f95e6a, type: 3}
+  closeDoorAudio: {fileID: 4531315096740686391, guid: b19fc9e65f8597d4cac97440d583e65a, type: 3}
   rain: {fileID: 0}
   isLastDoor: 0
   animator: {fileID: 1353921553}
@@ -81040,7 +81073,7 @@ Transform:
   m_GameObject: {fileID: 1538710536}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: -1.416, y: 0, z: -0.176}
+  m_LocalPosition: {x: -1.475, y: 0, z: -0.176}
   m_LocalScale: {x: 1, y: 1, z: 1.0073}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -81133,6 +81166,9 @@ MonoBehaviour:
   keyNumber: 0
   needsKey: 0
   canOpen: 0
+  closedDoor: 1
+  openDoorAudio: {fileID: 8161771736524475750, guid: b01ac07006c18ad4bb3feb5540f95e6a, type: 3}
+  closeDoorAudio: {fileID: 4531315096740686391, guid: b19fc9e65f8597d4cac97440d583e65a, type: 3}
   rain: {fileID: 0}
   isLastDoor: 0
   animator: {fileID: 1538710542}
@@ -83469,6 +83505,9 @@ MonoBehaviour:
   keyNumber: 3
   needsKey: 1
   canOpen: 0
+  closedDoor: 1
+  openDoorAudio: {fileID: 8161771736524475750, guid: b01ac07006c18ad4bb3feb5540f95e6a, type: 3}
+  closeDoorAudio: {fileID: 4531315096740686391, guid: b19fc9e65f8597d4cac97440d583e65a, type: 3}
   rain: {fileID: 1025462130}
   isLastDoor: 1
   animator: {fileID: 1575457456}
@@ -86684,7 +86723,7 @@ Transform:
   m_GameObject: {fileID: 1633789866}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.09, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -90100,6 +90139,9 @@ MonoBehaviour:
   keyNumber: 1
   needsKey: 1
   canOpen: 0
+  closedDoor: 1
+  openDoorAudio: {fileID: 8161771736524475750, guid: b01ac07006c18ad4bb3feb5540f95e6a, type: 3}
+  closeDoorAudio: {fileID: 4531315096740686391, guid: b19fc9e65f8597d4cac97440d583e65a, type: 3}
   rain: {fileID: 0}
   isLastDoor: 0
   animator: {fileID: 1681377759}
@@ -97660,7 +97702,7 @@ Transform:
   m_GameObject: {fileID: 1817877890}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -1, z: -0, w: 0}
-  m_LocalPosition: {x: -1.6, y: 2.191343, z: 6.5}
+  m_LocalPosition: {x: -1.6, y: 2.191343, z: 6.273}
   m_LocalScale: {x: 0.7838222, y: 0.78382194, z: 0.7838223}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -99832,7 +99874,7 @@ Transform:
   m_GameObject: {fileID: 1870335856}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: -5.51, y: 0, z: -4.67}
+  m_LocalPosition: {x: -5.22, y: 0, z: -4.67}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -100177,6 +100219,9 @@ MonoBehaviour:
   keyNumber: 0
   needsKey: 0
   canOpen: 0
+  closedDoor: 1
+  openDoorAudio: {fileID: 8161771736524475750, guid: b01ac07006c18ad4bb3feb5540f95e6a, type: 3}
+  closeDoorAudio: {fileID: 4531315096740686391, guid: b19fc9e65f8597d4cac97440d583e65a, type: 3}
   rain: {fileID: 0}
   isLastDoor: 0
   animator: {fileID: 1879830315}
@@ -106244,7 +106289,7 @@ Transform:
   m_GameObject: {fileID: 1985864422}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0.7071068, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: 1.35, y: -0.026873015, z: 6.19}
+  m_LocalPosition: {x: 1.35, y: -0.026873015, z: 5.963}
   m_LocalScale: {x: 0.7838218, y: 0.78382194, z: 0.7838218}
   m_ConstrainProportionsScale: 0
   m_Children: []
