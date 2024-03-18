@@ -30,6 +30,7 @@ public class DoorOpen : MonoBehaviour
       {
         animator.SetBool("OpenDoor", true);
         Tablet.hasTablet = false;
+        GameManager.canPause = false;
       }
     }
 

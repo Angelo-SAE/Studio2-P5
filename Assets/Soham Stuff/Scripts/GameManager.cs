@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
-    public static bool isPaused;
+    public static bool isPaused, canPause;
     [SerializeField] GameObject pauseScreen;
     [SerializeField] int pauseIndex;
     [SerializeField] RestartGame resetGameScript;
@@ -13,6 +13,7 @@ public class GameManager : MonoBehaviour
 
     private void Start()
     {
+        resetGameScript.RestartGameFunction();
         isPaused = false;
         Time.timeScale = 1.0f;
         pauseScreen.SetActive(false);
@@ -20,7 +21,7 @@ public class GameManager : MonoBehaviour
 
     void PauseGame()
     {
-        if (Input.GetKeyDown(KeyCode.Escape) && pauseIndex % 2 is 0 && Mode.mode3D)
+        if (Input.GetKeyDown(KeyCode.Escape) && pauseIndex % 2 is 0 && canPause)
         {
             isPaused = true;
             pauseIndex += 1;
@@ -53,13 +54,14 @@ public class GameManager : MonoBehaviour
 
     public void Restart()
     {
-        resetGameScript.RestartGameFunction();
         Scene scene = SceneManager.GetActiveScene();
         SceneManager.LoadScene(scene.buildIndex);
     }
 
     public void MainMenu()
     {
+        Cursor.lockState = CursorLockMode.Confined;
+        Cursor.visible = true;
         SceneManager.LoadScene(0);
     }
 

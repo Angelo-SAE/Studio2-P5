@@ -28,8 +28,10 @@ public class Mode : MonoBehaviour
       {
         if(mode3D)
         {
+          GameManager.canPause = false;
           mode3D = false;
         } else {
+          GameManager.canPause = true;
           mode3D = true;
         }
       }
