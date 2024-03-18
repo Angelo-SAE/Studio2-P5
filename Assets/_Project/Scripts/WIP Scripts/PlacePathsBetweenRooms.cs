@@ -5,7 +5,7 @@ using UnityEngine;
 public class PlacePathsBetweenRooms : MonoBehaviour
 {
     private bool checkedForHalls;
-    [SerializeField] private GameObject hallway1, hallway2;
+    [SerializeField] private GameObject hallway1, hallway2, hallwayBlock1, hallwayBlock2;
     private GameObject hallHolder;
 
     void Update()
@@ -37,8 +37,13 @@ public class PlacePathsBetweenRooms : MonoBehaviour
             {
               RoomSpots.roomSpots[a, b].GetComponent<RoomHolder>().northDOpen = true;
               RoomSpots.roomSpots[a, b + 1].GetComponent<RoomHolder>().southDOpen = true;
-              Instantiate(hallway1, new Vector3(a * 23f, 0f, (b + 1f)* 23f), hallway1.transform.rotation, hallHolder.transform);
+              Instantiate(hallway1, new Vector3(a * 23f, 0f, (b + 1f) * 23f), hallway1.transform.rotation, hallHolder.transform);
+            } else {
+              Instantiate(hallwayBlock1, new Vector3(a * 23f, 0f, (b + 1f) * 23f), hallway1.transform.rotation, hallHolder.transform);
             }
+          } else if(RoomSpots.roomSpots[a, b] is not null || RoomSpots.roomSpots[a, b + 1] is not null)
+          {
+            Instantiate(hallwayBlock1, new Vector3(a * 23f, 0f, (b + 1f) * 23f), hallway1.transform.rotation, hallHolder.transform);
           }
         }
       }
@@ -53,7 +58,12 @@ public class PlacePathsBetweenRooms : MonoBehaviour
               RoomSpots.roomSpots[a, b].GetComponent<RoomHolder>().eastDOpen = true;
               RoomSpots.roomSpots[a + 1, b].GetComponent<RoomHolder>().westDOpen = true;
               Instantiate(hallway2, new Vector3((a + 1) * 23f, 0f, b * 23f), hallway2.transform.rotation, hallHolder.transform);
+            } else {
+              Instantiate(hallwayBlock2, new Vector3((a + 1) * 23f, 0f, b * 23f), hallway2.transform.rotation, hallHolder.transform);
             }
+          } else if(RoomSpots.roomSpots[a, b] is not null || RoomSpots.roomSpots[a + 1, b] is not null)
+          {
+            Instantiate(hallwayBlock2, new Vector3((a + 1) * 23f, 0f, b * 23f), hallway2.transform.rotation, hallHolder.transform);
           }
         }
       }
